@@ -4,4 +4,4 @@ title: home - nick thompson
 ---
 
 ![Picture of me](/images/nickcocoa.jpg)
-I'm Nick.
+i'm nick. and this is my dog cocoa.
