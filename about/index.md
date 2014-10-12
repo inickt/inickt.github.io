@@ -1,5 +1,5 @@
 ---
 layout: default
-title: about me
+title: about - nick thompson
 ---
-testing
+my story
