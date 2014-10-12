@@ -1,4 +1,3 @@
-inickt.github.io
+this is the code for my website
 ================
-
-Nick Thompson's Website
+you can view it live in action at [nickthompson.guru](http://nickthompson.guru).
