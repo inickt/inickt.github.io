@@ -1,6 +1,6 @@
 ---
 layout: default
-title: nick thompson - home
+title: home - nick thompson
 ---
 
 ![Picture of me](/images/nickcocoa.jpg)
