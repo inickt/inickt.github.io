@@ -53,12 +53,12 @@
     <div class="wrapper">
       <header>
         <h1><a href="/">nick thompson</a></h1>
-        <p class="view"><a href="/about/">about<small> me and my story</small></a></li>
-        <p class="view"><a href="/help/">help<small> computer help and services</small></a></li>
-        <p class="view"><a href="/portfolio/">portfolio<small> my graphic design work</small></a></li>
-        <p class="view"><a href="/projects/">projects<small> stuff i have worked on</small></a></li>
-        <p class="view"><a href="/blog/">blog<small >my ramblings</small></a></li>
-        <p class="view"><a href="/contact/">contact<small> me and my info</small></a></li>
+        <p class="view"><a href="/about/">about<small>me and my story</small></a></li>
+        <p class="view"><a href="/help/">help<small>computer help and services</small></a></li>
+        <p class="view"><a href="/portfolio/">portfolio<small>my graphic design work</small></a></li>
+        <p class="view"><a href="/projects/">projects<small>stuff i have worked on</small></a></li>
+        <p class="view"><a href="/blog/">blog<small>my random ramblings</small></a></li>
+        <p class="view"><a href="/contact/">contact<small>me and my info</small></a></li>
 
       </header>
       <section id="main">
