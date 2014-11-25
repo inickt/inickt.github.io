@@ -37,36 +37,46 @@ I consistently see comments from both good friends of mine and those I don't eve
 
 <h3>thats quite the wide range of opinions. what does each side have arguing for them?</h3>
 >race had no involvement in this case- it was an issue of murder only
+
 Lets disregard race and just summarize what happened and see where we stand. 
 A man steals some stuff from a convenience store. The description of the subject was disclosed over police radio. A policemen is doing his route, and after commenting to some teenagers to stop walking down the middle of the street, likely identifies the subject. A physical altercation occurs and a gun is fired. Feeling threatened, and with the subject possible not cooperating, he was shot and killed.
 
 Obviously this is generalized and missing a lot of odd information that gives this case some interesting quirks. However, no matter which side you fall on, can view this and agree there could be a chance of a case and arguments for each side. That's without including race. 
 
 >united states is not a free country from racism
+
 No its not. But it sure is a hell lot more free than counties with civil wars occurring in them. No matter how oppressed you feel in the USA you know there are rights you have that some could only dream of. That doesn't make it right but is something to consider.
 
 >all white people are racist towards blacks/ all blacks are racist towards whites
+
 ??? really. People make generalizations but if you honestly believe this stop cowering under your rock.
 
 >black lives don't matter to americans
+
 False. I would argue all lives matter to anyone. There are some ignorant racist people out there who want to make trouble, and these are the people you hear from. The tiny small minority tends to make the most trouble and misrepresents the larger group in any situation.
 
 >justice system did its job
+
 Maybe. Maybe not. We don't know 100% and will never know. 
 
 >justice system is corrupt
+
 Probably, but so is our government. Changes do need to be made and this helps them become more aware of what needs to be changed.
 
 >brown was black, wilson was white: no case. but what about the opposite?
+
 Could be likely, but there are many factors to consider. Race is one, however. See below.
 
 >white people cannot talk about this because they are not the majority
+
 This is hard for me to counter because I myself am white but I think well knowledgeable and educated peoples about the subject for any topic will be able to intelligently talk about it.
 
 >violence will not change this decision
+
 No it won't. If you burn the American flag you get whatever consequences come from you. Peaceful protest helps raise awareness of the issue however. Never fight fire with fire. 
 
 >cop vs civilian or black vs white
+
 See below
 
 
