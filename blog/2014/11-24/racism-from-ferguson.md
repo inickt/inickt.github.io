@@ -61,7 +61,7 @@ Maybe. Maybe not. We don't know 100% and will never know.
 
 >justice system is corrupt
 
-Probably, but so is our government. Changes do need to be made and this helps them become more aware of what needs to be changed.
+Probably, but so is our government. Changes do need to be made and this helps them become more aware of what needs to be changed. We will never know what truly happened on that day. Many witnesses were interviewed, and all had different views. See [Rashomon Effect](http://en.wikipedia.org/wiki/Rashomon_effect)
 
 >brown was black, wilson was white: no case. but what about the opposite?
 
