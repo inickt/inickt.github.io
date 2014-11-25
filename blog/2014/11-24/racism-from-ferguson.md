@@ -43,4 +43,4 @@ This is such a controversial topic, and with these sorts of topics one needs to 
 Before this announcement I fully expected this case to go to trial. 
 
 <h3>final note</h3>
-I researched this a little before writing, I did not pull this stuff out of my ass. I didn't really chime in much on Twitter, because currently this post is at __ words. I tried to keep all of my arguments as unbiased as possible, and get to the root of the problem. If you disagree with what I say tweet me at [@inickt6](http://twitter.com/inick60 or send me an [email](sendto:me@nickthompson.guru).
+I researched this a little before writing, I did not pull this stuff out of my ass. I didn't really chime in much on Twitter, because currently this post is at __ words. I tried to keep all of my arguments as unbiased as possible, and get to the root of the problem. If you disagree with what I say tweet me at [@inickt6](http://twitter.com/inick6) or send me an [email](mailto:me@nickthompson.guru).
