@@ -1,71 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<link rel="apple-touch-icon-precomposed" href="/favicon-152.png">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }}</title>
 
-    <link rel="stylesheet" href="https://github.com/themes/minimal/stylesheets/styles.css">
-    <style>
-      header { zoom: 1.2; }
-      header h1 { margin-bottom: 5px; }
-      header h1 a { color: #494949; font-weight: bold; }
-      header h3 { margin-top: 20px; margin-bottom: 5px; }
-      header p.view { margin-bottom: 5px; }
-      header p.view small { padding-top: 2px; }
-      header ul {
-        zoom: 0.7;
-        margin-top: 25px;
-      }
-      section p { margin-top: 10px; }
-      section h1 { margin-bottom: 15px; }
-      section h2 { margin-bottom: 10px; }
-      section h2 { margin-bottom: 10px; }
-      footer { bottom: 20px; }
-      footer p { margin-bottom: 5px; }
-      .half-width {
-        float: left;
-        width: 200px;
-        list-style: none;
-        padding: 5px;
-        margin: 7px;
-        margin-bottom: 10px;
-      }
-      .half-width h4 {
-        margin-bottom: 5px;
-      }
-      .half-width ul {
-        padding-left: 0;
-      }
-      .half-width ul li {
-        list-style: inside;
-        font-size: 15px;
-      }
-      .clear-fix {
-        clear: both;
-      }
-    </style>
-    <script src="https://github.com/themes/minimal/javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1><a href="/">nick thompson</a></h1>
-        <p class="view"><a href="/about/">about<small> me and my story</small></a></li>
-        <p class="view"><a href="/help/">help<small> computer help and services</small></a></li>
-        <p class="view"><a href="/portfolio/">portfolio<small> my graphic design work</small></a></li>
-        <p class="view"><a href="/projects/">projects<small> stuff i have worked on</small></a></li>
-        <p class="view"><a href="/blog/">blog<small> my ramblings</small></a></li>
-        <p class="view"><a href="/contact/">contact<small> me and my info</small></a></li>
+    {% include head.html %}
 
-      </header>
-      <section id="main">
-        {{ content }}
-      </section>
-      <footer>
-      </footer>
-    </div>
-  </body>
+    <body>
+        {% include nav.html %}
+
+            {{ content }}
+
+        {% include footer.html %}
+        {% include js.html %}
+    </body>
 </html>
