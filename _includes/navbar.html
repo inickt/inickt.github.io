@@ -1,5 +1,5 @@
 <nav class="navbar navbar-default navbar-fixed-top">
-	<div  class="container">
+	<div  class="container-fluid">
 		<!-- Nav Collapse Mobile -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -14,10 +14,12 @@
 		<div class="navbar-collapse collapse-nav navbar-right">
 			<ul class="nav navbar-nav">
 				<li {% if page.title == "Home" %}class="active"{% endif %}><a href="/">HOME</a></li>
-        		<li {% if page.title == "Blog" %}class="active"{% endif %}><a href="{{"/blog/" | prepend: site.baseurl }}">BLOG</a></li>
-        		<li {% if page.title == "Portfolio" %}class="active"{% endif %}><a href="{{"/portfolio/" | prepend: site.baseurl }}">PORTFOLIO</a></li>
-       			<li {% if page.title == "About" %}class="active"{% endif %}><a href="{{"/about/" | prepend: site.baseurl }}">ABOUT</a></li>
-        		<li {% if page.title == "Contact" %}class="active"{% endif %}><a href="{{"/contact/" | prepend: site.baseurl }}">CONTACT</a></li>
+        		<li {% if page.title == "About Me" %}class="active"{% endif %}><a href="/about/">ABOUT ME</a></li>
+        		<li {% if page.title == "Computer Help & Services" %}class="active"{% endif %}><a href="/help/">COMPUTER SERVICES</a></li>
+       			<li {% if page.title == "Portfolio" %}class="active"{% endif %}><a href="/portfolio/">PORTFOLIO</a></li>
+        		<li {% if page.title == "Developer" %}class="active"{% endif %}><a href="/developer/">DEVELOPER</a></li>
+        		<li {% if page.title == "Blog" %}class="active"{% endif %}><a href="/blog/">BLOG</a></li>
+        		<li {% if page.title == "Contact" %}class="active"{% endif %}><a href="/contact/">CONTACT</a></li>
 			</ul>
 		</div>
 	</div>
