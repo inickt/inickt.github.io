@@ -31,7 +31,7 @@
 
   <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
-	<div  class="container">
+	<div  class="container-fluid">
 		<!-- Nav Collapse Mobile -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -43,20 +43,37 @@
 		<a class="navbar-brand" href="/"><b>nick</b>thompson</a>
 		</div>
 		
-		<div class="navbar-collapse collapse-nav navbar-right">
+		<div class="navbar-collapse collapse navbar-right">
 			<ul class="nav navbar-nav">
         		<li class="active"><a href="/about/">ABOUT</a></li>
-        		<li ><a href="/help/">COMPUTER HELP</a></li>
-       			<li ><a href="/portfolio/">PORTFOLIO</a></li>
-        		<li ><a href="/developer/">DEVELOPER</a></li>
+        		<li class=dropdown>
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">COMPUTER HELP <span class="caret"></span></a>
+        			<ul class="dropdown-menu" role="menu">
+        				<li><a href="/help/#1">Action</a></li>
+           				<li><a href="/help/#2">Another action</a></li>
+            			<li><a href="/help/#3">Something else here</a></li>
+            		</ul>
+        		</li>
+        		<li class=dropdown>
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">PORTFOLIO <span class="caret"></span></a>
+        			<ul class="dropdown-menu" role="menu">
+        				<li><a href="/portfolio/#mywork">MY WORK</a></li>
+           				<li><a href="/portfolio/#">FREELANCE JOBS</a></li>
+            		</ul>
+        		</li>
+        		<li class=dropdown>
+        			<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">DEVELOPER <span class="caret"></span></a>
+        			<ul class="dropdown-menu" role="menu">
+        				<li><a href="/developer/#mywork">MY POROJECTS</a></li>
+           				<li><a href="http://repo.nickthompson.guru">CYDIA REPO</a></li>
+            		</ul>
+        		</li>
         		<li ><a href="/blog/">BLOG</a></li>
         		<li ><a href="/contact/">CONTACT</a></li>
 			</ul>
 		</div>
 	</div>
 </nav>
-
-
 
 
     <div class="page-content">
