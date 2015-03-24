@@ -24,10 +24,11 @@ markdown: kramdown
 colors:  #in hex code if not noted else
   primary: "#AB3C47" #"#F70031" 
   secondary: "#872F38" #"#33004D"
-  background: "#333333"
+  background: "#222"
   navbar: "#000000"
   link: "#428bca"
   link_hover: "#01b2fe"
+  header: "#DDD"
   footer: "#111"
   footer_heading: "#ffffff"
   footer_content: "#fff"

@@ -10,7 +10,7 @@
 	} 
 
 body { 
-	background: ; 
+	background: #222; 
 	margin: 0; 
 	height: 100%; 
 	color: #872F38;
@@ -217,7 +217,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: #AB3C47;
+	background-color: #DDD;
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
@@ -225,12 +225,12 @@ a:focus {
 }
 
 #headerwrap h3, h5 {
-	color: white;
+	color: #AB3C47;
 	font-weight: 400;
 }
 
 #headerwrap h1 {
-	color: white;
+	color: #AB3C47;
 	margin-bottom: 25px;
 }
 

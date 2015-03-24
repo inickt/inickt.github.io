@@ -10,7 +10,7 @@
 	} 
 
 body { 
-	background: {{ site.colors.backgroud }}; 
+	background: {{ site.colors.background }}; 
 	margin: 0; 
 	height: 100%; 
 	color: {{ site.colors.secondary }};
@@ -217,7 +217,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: {{ site.colors.primary }};
+	background-color: {{ site.colors.header }};
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
@@ -225,12 +225,12 @@ a:focus {
 }
 
 #headerwrap h3, h5 {
-	color: white;
+	color: {{ site.colors.primary }};
 	font-weight: 400;
 }
 
 #headerwrap h1 {
-	color: white;
+	color: {{ site.colors.primary }};
 	margin-bottom: 25px;
 }
 
