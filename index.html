@@ -5,11 +5,34 @@ description: The home page of Nick Thompson's website.
 keywords: home
 ---
 
-<div class="home">
+<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h1>Hi- I'm Nick.</h1>			
+				</div>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /headerwrap -->
+	
+<div class="container">
 
-  <h1 class="page-heading">Posts</h1>
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Navbar example</h1>
+        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+        <p>To see the difference between static and fixed top navbars, just scroll.</p>
+        <p>
+          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+        </p>
+      </div>
+    </div> <!-- /container -->
+    
 
-  <ul class="post-list">
+
+
+<!-- 
+<ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
@@ -20,7 +43,5 @@ keywords: home
       </li>
     {% endfor %}
   </ul>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>f<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>f
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+ -->
+<!--  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->

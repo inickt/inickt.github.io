@@ -10,10 +10,10 @@
 	} 
 
 body { 
-	background: ; 
+	background: {{ site.colors.backgroud }}; 
 	margin: 0; 
 	height: 100%; 
-	color: #872F38;
+	color: {{ site.colors.secondary }};
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	}
@@ -30,7 +30,7 @@ p {
 	font-weight: 400;
 	font-size: 14px; 
 	line-height: 24px;
-	color: #872F38; 
+	color: {{ site.colors.secondary }}; 
 	margin-top: 10px; 
 }
 
@@ -50,7 +50,7 @@ ol {
 }
 
 a { 
-    color:#428bca;
+    color:{{ site.colors.link }};
     padding: 0;
 	margin: 0;
 	text-decoration: none; 
@@ -63,18 +63,18 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color:#01b2fe;
+  color:{{ site.colors.link_hover }};
 }
 
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
-	background:#872F38;
+	background:{{ site.colors.secondary }};
 }
 ::selection {
 	color: #fff;
 	text-shadow:none;
-	background:#872F38;
+	background:{{ site.colors.secondary }};
 }
 
 .centered {
@@ -106,32 +106,32 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: #AB3C47;
+	color: {{ site.colors.primary }};
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #AB3C47;
+	color: {{ site.colors.primary }};
 	background-color: transparent;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #AB3C47;
+  color: {{ site.colors.primary }};
 }
 
 #brand-home {
-  color: #AB3C47;
+  color: {{ site.colors.primary }};
 }
 
 .navbar-default {
-	background-color: #000000;
+	background-color: {{ site.colors.navbar }};
 	border-color: transparent;
 	opacity: 0.85;
     filter: alpha(opacity=85); /* For IE8 and earlier */
 }
 
 .dropdown-menu {
-	background: #000000;
+	background: {{ site.colors.navbar }};
 	border-color: transparent;
 }
 
@@ -144,8 +144,8 @@ a:focus {
 
 .btn-theme {
   color: #fff;
-  background-color: #872F38;
-  border-color: #872F38;
+  background-color: {{ site.colors.secondary }};
+  border-color: {{ site.colors.secondary }};
   margin: 4px;
 }
 .btn-theme:hover,
@@ -154,8 +154,8 @@ a:focus {
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
   color: #fff;
-  background-color: #AB3C47;
-  border-color: #AB3C47;
+  background-color: {{ site.colors.primary }};
+  border-color: {{ site.colors.primary }};
 }
 
 .dmbutton:hover,
@@ -205,7 +205,7 @@ a:focus {
 }
 
 .hline {
-	border-bottom: 2px solid #872F38;
+	border-bottom: 2px solid {{ site.colors.secondary }};
 }
 
 .hline-w {
@@ -217,7 +217,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: #AB3C47;
+	background-color: {{ site.colors.primary }};
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
@@ -245,7 +245,7 @@ a:focus {
 }
 
 #service i {
-	color: #AB3C47;
+	color: {{ site.colors.primary }};
 	font-size: 60px;
 	padding: 15px;
 }
@@ -293,7 +293,7 @@ a:focus {
 {
 	height:100%;
 	width:100%;
-	background-color:#AB3C47;
+	background-color:{{ site.colors.primary }};
 	text-align:center;
 }
 
@@ -302,25 +302,25 @@ a:focus {
 #footerwrap {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background: #111;
+	background: {{ site.colors.footer }};
 }
 
 #footerwrap p {
-	color: #fff;
+	color: {{ site.colors.footer_content }};
 }
 
 #footerwrap h4 {
-	color: #ffffff;
+	color: {{ site.colors.footer_heading }};
 }
 
 #footerwrap i {
 	font-size: 30px;
-	color: #fff;
+	color: {{ site.colors.footer_content }};
 	padding-right: 25px;
 }
 
 #footerwrap i:hover {
-	color: #AB3C47
+	color: {{ site.colors.primary }}
 }
 
 /*	################################################################
@@ -350,7 +350,7 @@ a:focus {
 }
 
 .ctitle {
-	color: #AB3C47;
+	color: {{ site.colors.primary }};
 	font-weight: 700;
 	margin-bottom: 15px;
 }
@@ -366,7 +366,7 @@ csmall {
 }
 
 .badge-theme {
-	background: #AB3C47;
+	background: {{ site.colors.primary }};
 }
 
 

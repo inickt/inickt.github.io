@@ -4,10 +4,10 @@
     <title>Nick Thompson</title>
     <description>Future description for the website
 </description>
-    <link>http://nickthompson.guru/</link>
-    <atom:link href="http://nickthompson.guru/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 21 Mar 2015 19:26:32 -0500</pubDate>
-    <lastBuildDate>Sat, 21 Mar 2015 19:26:32 -0500</lastBuildDate>
+    <link>http://nickthompson.guru//</link>
+    <atom:link href="http://nickthompson.guru//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 23 Mar 2015 21:04:04 -0500</pubDate>
+    <lastBuildDate>Mon, 23 Mar 2015 21:04:04 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Mon, 16 Mar 2015 13:30:09 -0500</pubDate>
-        <link>http://nickthompson.guru/blog/2015/03/16/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://nickthompson.guru/blog/2015/03/16/welcome-to-jekyll/</guid>
+        <link>http://nickthompson.guru//blog/2015/03/16/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">http://nickthompson.guru//blog/2015/03/16/welcome-to-jekyll/</guid>
         
         
         <category>lol</category>
