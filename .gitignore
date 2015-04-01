@@ -1,1 +1,4 @@
 *.db
+_site/
+.DS_Store
+
