@@ -11,24 +11,15 @@ url: "http://nickthompson.guru/" # the base hostname & protocol for your site
 markdown: kramdown
 
 
-# Colors (hex)
-#colors:
-#  primary: "#AB3C47"
-#  secondary: "#872F38"
-#  dark: "#121011"
-#  med: "#574D52"
-#  light: "#D1BAC5"
-#  text_light: "#FFFFFF"
-#  text_dark: "#000000"
-  
 colors:  #in hex code if not noted else
   primary: "#AB3C47" #"#F70031" 
-  secondary: "#872F38" #"#33004D"
+  secondary: "#999" #"#33004D"
   background: "#222"
   navbar: "#000000"
   link: "#428bca"
   link_hover: "#01b2fe"
-  header: "#DDD"
+  header: "#EEE"
   footer: "#111"
   footer_heading: "#ffffff"
   footer_content: "#fff"
+  text_light: "#fff"

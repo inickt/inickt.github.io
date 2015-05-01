@@ -305,7 +305,7 @@ a:focus {
 	background: {{ site.colors.footer }};
 }
 
-#footerwrap p {
+#footerwrap p, a {
 	color: {{ site.colors.footer_content }};
 }
 
@@ -319,7 +319,7 @@ a:focus {
 	padding-right: 25px;
 }
 
-#footerwrap i:hover {
+#footerwrap i:hover, a:hover {
 	color: {{ site.colors.primary }}
 }
 
@@ -413,4 +413,21 @@ a.anchor{
     position: relative; 
     top: -80px; 
     visibility: hidden;
+}
+
+#red {
+	background: {{ site.colors.primary }};
+	color: {{ site.colors.text_light }};
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-top: 20px;
+	padding-bottom: 25px;
+}
+
+#redthin {
+	background: {{ site.colors.primary }};
+	color: {{ site.colors.text_light }};
+
+	padding-top: 10px;
+	padding-bottom: 15px;
 }

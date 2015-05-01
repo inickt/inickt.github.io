@@ -1,6 +1,8 @@
+<!-- Footer -->
 <div id="footerwrap">
     <div class="container">
         <div class="row">
+        	<!-- About Footer -->
             <div class="col-lg-4">
                 <h4>About</h4>
                 <div class="hline-w"></div>
@@ -8,29 +10,38 @@
                			Hi.
                		</p>
             </div>
+            
+            <!-- Social Links Footer -->
             <div class="col-lg-4">
                 <h4>Social Links</h4>
                 <div class="hline-w"></div>
-                	<a href="http://twitter.com/nickthompsondev"><i class="icon-twitter"></i>
-                	<a href=""><i class="icon-bitcoin"></i>
-                	<a href=""><i class="icon-dribbble"></i>
-                	<a href=""><i class="icon-facebook"></i>
-                	<a href=""><i class="icon-fblike"></i>
-                	<a href=""><i class="icon-googleplus"></i>
-                	<a href=""><i class="icon-instagram"></i>
-                	<a href=""><i class="icon-linkedin"></i>
-                	<a href=""><i class="icon-spotify"></i>
-                	<a href=""><i class="icon-youtube"></i>
-                	<a href=""><i class="icon-rss"></i>
-                	<a href=""><i class="icon-paypal"></i>
+                <a href="https://www.facebook.com/nickcthompson6" title="Friend me"><i class="icon-facebook"></i></a>
+                <a href="https://twitter.com/nickthompsondev" title="Follow me"><i class="icon-twitter"></i></a>
+                <a href="https://instagram.com/inickt/" title="Follow me"><i class="icon-instagram"></i></a>
+                <a href="https://plus.google.com/u/0/+NickThompson6/" title="+1 me"><i class="icon-googleplus"></i></a>
+                <a href="https://www.facebook.com/nickthompsoncomputers" title="Like me"><i class="icon-fblike"></i></a>
+                <!-- <a href="https://www.linkedin.com/in/nickcthompson" title="Network with me"><i class="icon-linkedin"></i></a> -->
+                <a href="https://open.spotify.com/user/inickt" title="Listen with me"><i class="icon-spotify"></i></a>
+                <a href="https://www.youtube.com/channel/UCzJhk2bsmqQXK7cRcs30r4g" title="Watch me"><i class="icon-youtube"></i></a>
+                <!--  <a href="https://dribbble.com/inickt" title="Show and tell"><i class="icon-dribbble"></i></a> -->
+                <a href="https://www.coinbase.com/inickt" title="Donate with Bitcoin"><i class="icon-bitcoin"></i></a>
+                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40nickthompson%2eguru&lc=US&item_name=Donat%20to%20Nick%20Thompson&currency_code=USD" title="Donate with Paypal"><i class="icon-paypal"></i></a>
+            	<a href="/feed.xml" title="Subscribe to blog"><i class="icon-rss"></i></a>
             </div>
+            
+            <!-- Recent Posts Footer -->
             <div class="col-lg-4">
-                <h4>Location</h4>
+                <h4>Recent Posts</h4>
                 <div class="hline-w"></div>
                 <p>
-                    
+                    {% for post in site.posts limit:4 %}
+    					∙ <a href="{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></br>
+ 					{% endfor %}
                 </p>
             </div>
+    	</div>
+    	<div class="centered">
+    		</br>© Nick Thompson 2015. All rights reserved.</small></p>
     	</div>
 	</div>
 </div>
