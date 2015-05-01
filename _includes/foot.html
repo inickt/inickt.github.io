@@ -4,10 +4,12 @@
         <div class="row">
         	<!-- About Footer -->
             <div class="col-lg-4">
-                <h4>About</h4>
+                <h4>Location</h4>
                 <div class="hline-w"></div>
                 	<p>
-               			Hi.
+               			Nick Thompson</br>
+               			1134 Darthmouth Road</br>
+               			Flossmoor, IL 60422</br>
                		</p>
             </div>
             
@@ -34,7 +36,7 @@
                 <h4>Recent Posts</h4>
                 <div class="hline-w"></div>
                 <p>
-                    {% for post in site.posts limit:4 %}
+                    {% for post in site.posts limit:3 %}
     					∙ <a href="{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></br>
  					{% endfor %}
                 </p>
