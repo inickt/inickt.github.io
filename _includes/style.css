@@ -419,6 +419,7 @@ a.anchor{
 	background: {{ site.colors.primary }};
 	color: {{ site.colors.text_light }};
 	margin-top: 50px;
+	margin-bottom: 5px;
 	padding-top: 20px;
 	padding-bottom: 25px;
 }
@@ -426,6 +427,8 @@ a.anchor{
 #redthin {
 	background: {{ site.colors.primary }};
 	color: {{ site.colors.text_light }};
-	padding-top: 5px;
-	padding-bottom: 10px;
+	padding-top: 2px;
+	padding-bottom: 7px;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
