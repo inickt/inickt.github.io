@@ -23,7 +23,7 @@ permalink: /category/
                             
                                 <p><a href="{{ post.url  | prepend: site.baseurl }}" ></a></p>
                                 <p><a href="{{ post.url }}">∙ {{ post.title }}</a></p>
-                                <csmall><em>&nbsp;&nbsp;&nbsp;&nbsp;Posted on {{ post.date | date_to_string }}</em></csmall>
+                                <csmall><em>&nbsp;&nbsp;&nbsp;&nbsp;Posted on {{ post.date | date_to_string }} <span class="disqus-comment-count" data-disqus-url="http://nickthompson.guru{{ post.url }}"></span></em></csmall>
                             
                
             {% endfor %}
