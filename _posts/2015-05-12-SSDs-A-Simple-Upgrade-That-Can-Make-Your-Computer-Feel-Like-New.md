@@ -3,10 +3,7 @@ layout: post
 comments: true
 title: "SSDs: A Simple Upgrade Which Can Make Your Computer Feel Like New"
 date: 2015-05-12
-categories: 
- - SSD 
- - Upgrade
- - Advice
+categories: SSD Upgrade Advice
 author: Nick Thompson
 ---
 One of the easiest things you can do to make your computer feel new again is to add a Solid State Drive (SSD) to it.
