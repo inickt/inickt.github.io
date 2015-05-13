@@ -1,7 +1,7 @@
 ---
 layout: post
 comments: true
-title: "SSDs: The Simple Upgrade That Makes Your Computer Feel Like New"
+title: "SSDs: A Simple Upgrade Which Can Make Your Computer Feel Like New"
 date: 2015-05-12
 categories: 
  - SSD 
