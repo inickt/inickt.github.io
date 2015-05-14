@@ -1,4 +1,4 @@
 *.db
 _site/
+_plugins/
 .DS_Store
-
