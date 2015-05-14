@@ -3,17 +3,17 @@ layout: default
 title: Blog
 permalink: /blog/
 ---
+<!-- Blog Header -->
 <div id="red">
 	<div class="container">
 		<h2>My Blog</h2>
 	</div>
 </div>
+
+<!-- Blog Post List -->
 <div class="container">
     <div class="row">
-
-        <! -- BLOG POSTS LIST -->
         <div class="col-lg-8">
-
             {% for post in site.posts %}
                 <! -- Blog Post -->
                 <a href="{{ post.url }}">
@@ -26,12 +26,8 @@ permalink: /blog/
                 <div class="hline"></div>
                 <div class="spacing"></div>
             {% endfor %}
-
-        </div><! --/col-lg-8 -->
-
+        </div>
         {% include sidebar.html %}
-
-    </div><! --/row -->
-</div><! --/container -->
-
+    </div>
+</div>
 {% include disqus-count.html %}

@@ -1,17 +1,17 @@
 ---
 layout: default
 ---
+<!-- Post Title Header -->
 <div id="red">
 	<div class="container">
 		<h2>{{ page.title }}</h2>
 		<csmall>{{ page.date | date: "%b %-d, %Y" }}. | {{ page.author }}</csmall>
 	</div>
 </div>
+<!-- Post -->
 <div class="container">
     <div class="row">
-        <! -- SINGLE POST -->
         <div class="col-lg-8">
-            <! -- Blog Post  -->
             <!-- 
 			<p><img class="img-responsive" src="{{ "/assets/img/blog/" | prepend: site.baseurl }}{{ page.img }}"></p>
             <a href="{{ page.url | prepend: site.baseurl }}">
@@ -25,9 +25,7 @@ layout: default
 				{% include disqus.html %}
 				{% endif %}
 			</div>
-        </div><! --/col-lg-8 -->
-        
+        </div>
         {% include sidebar.html %}
-
-    </div><! --/row -->
-</div><! --/container -->
+    </div>
+</div>
