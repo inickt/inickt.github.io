@@ -5,6 +5,7 @@ title: "SSDs: A Simple Upgrade Which Can Make Your Computer Feel Like New"
 date: 2015-05-12
 excerpt: "Your computer is getting slow. It takes minutes to simply turn on, and even longer when you go to launch a program. Besides cleaning up unnecessary programs or files or an operating system reinstall which I can provide, one of the easiest things you can do to make your computer feel new again is to add a Solid State Drive (SSD) to it."
 categories: SSD Upgrade Advice
+tags: fbpage twitterdev
 author: Nick Thompson
 ---
 <img src="/assets/images/blog/SSD-vs-HDD.jpg" alt="SSD and HDD" class="img-responsive center-block" style="border:10px solid white">
