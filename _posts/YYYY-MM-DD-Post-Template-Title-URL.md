@@ -1,9 +1,10 @@
 ---
 layout: post
+author: Nick Thompson
 comments: true
 title: "Post Title in Quotes"
-date: YYYY-MM-DD
-categories: tags separated by space
+excerpt: ""
+description: ""
+categories: tags seperated by space
 tags: fb fbpage twitter twitterdev
-author: Nick Thompson
 ---
