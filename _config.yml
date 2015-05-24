@@ -16,7 +16,6 @@ exclude: ["/_posts/YYYY-MM-DD-Post-Template-Title-URL.md"]
 # Build settings
 markdown: kramdown
 
-
 colors:  #in hex code if not noted else
   primary: "#AB3C47" #"#F70031" 
   secondary: "#999" #"#33004D"
