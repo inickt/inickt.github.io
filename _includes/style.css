@@ -432,3 +432,12 @@ a.anchor{
 	margin-top: 10px;
 	margin-bottom: 5px;
 }
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+}
+
+ .carousel-content {
+    display:flex;
+    align-items:center;
+}
