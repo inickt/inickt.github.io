@@ -7,24 +7,10 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://nickthompson.guru" # the base hostname & protocol for your site
 
 gems:
-  - jekyll-sitemap
 
-permalink: /blog/:categories/:year/:month/:day/:title/
+permalink: /blog/:year/:month/:day/:title/
 
 exclude: ["/_posts/YYYY-MM-DD-Post-Template-Title-URL.md"]
 
 # Build settings
 markdown: kramdown
-
-colors:  #in hex code if not noted else
-  primary: "#AB3C47" #"#F70031" 
-  secondary: "#BBB" #"#33004D"
-  background: "#222"
-  navbar: "#000000"
-  link: "#428bca"
-  link_hover: "#01b2fe"
-  header: "#EEE"
-  footer: "#111"
-  footer_heading: "#ffffff"
-  footer_content: "#fff"
-  text_light: "#fff"

@@ -1,55 +1,15 @@
-<!-- Footer -->
-<div id="footerwrap">
-    <div class="container">
-        <div class="row">
-        	<!-- About Footer -->
-            <div class="col-lg-4">
-                <h4>Location</h4>
-                <div class="hline-w"></div>
-                	<p>
-               			Nick Thompson</br>
-               			1134 Dartmouth Road</br>
-               			Flossmoor, IL 60422</br>
-               		</p>
-            </div>
-            
-            <!-- Social Links Footer -->
-            <div class="col-lg-4">
-            	<h4>Social Links</h4>
-                <div class="hline-w"></div>
-                <a href="https://www.facebook.com/nickcthompson6" title="Friend me"><i class="icon-facebook"></i></a>
-                <a href="https://twitter.com/nickthompsondev" title="Follow me"><i class="icon-twitter"></i></a>
-                <a href="https://instagram.com/inickt/" title="Follow me"><i class="icon-instagram"></i></a>
-                <a href="https://plus.google.com/u/0/+NickThompson6/" title="+1 me"><i class="icon-googleplus"></i></a>
-                <a href="https://www.github.com/inickt" title="Code with me"><i class="icon-github"></i></a>
-                <a href="https://www.facebook.com/nickthompsoncomputers" title="Like me"><i class="icon-fblike"></i></a>
-                <a href="https://www.linkedin.com/in/nickcthompson" title="Network with me"><i class="icon-linkedin"></i></a>
-                <a href="https://open.spotify.com/user/inickt" title="Listen with me"><i class="icon-spotify"></i></a>
-                <a href="https://www.youtube.com/channel/UCzJhk2bsmqQXK7cRcs30r4g" title="Watch me"><i class="icon-youtube"></i></a>
-                <!--  <a href="https://dribbble.com/inickt" title="Show and tell"><i class="icon-dribbble"></i></a> -->
-                <a href="https://www.coinbase.com/inickt" title="Donate with Bitcoin"><i class="icon-bitcoin"></i></a>
-                <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=me%40nickthompson%2eguru&lc=US&item_name=Donat%20to%20Nick%20Thompson&currency_code=USD" title="Donate with Paypal"><i class="icon-paypal"></i></a>
-            	<a href="/feed.xml" title="Subscribe to blog"><i class="icon-rss"></i></a>
-            </div>
-            
-            <!-- Recent Posts Footer -->
-            <div class="col-lg-4">
-                <h4>Recent Posts</h4>
-                <div class="hline-w"></div>
-                <p>
-                    {% for post in site.posts limit:3 %}
-    					∙ <a href="{{ post.url }}">{{ post.date | date: "%b %-d, %Y" }} - {{ post.title }}</a></br>
- 					{% endfor %}
-                </p>
-            </div>
-    	</div>
-    	<!-- Copywrite -->
-    	<div class="centered">
-    		</br>© Nick Thompson 2015. All rights reserved.</small></p>
-    	</div>
-	</div>
-</div>
-
+<!-- Foot -->
 <!-- Scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="/assets/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+<script src="/assets/js/app.js"></script>
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-60562763-2', 'auto');
+ga('send', 'pageview');
+</script>

@@ -1,16 +1,27 @@
 ---
-layout: default
+layout: home
 title: Home
-description: "The home page of Nick Thompson's website with info about him, his computer services, his portfolio, and his blog." 
+description: "I am a current student at Northeastern University studying computer science and mathematics. I love technology and hacking on random projects."
 keywords: home
 ---
-<!-- Home Header -->
-<div id="headerwrap">
-	 <div class="container">
-		<div class="row-centered">
-				<h1>Hi- I'm Nick.</h1>
-				<img src="/assets/images/profile.jpg" alt="Profile Image" class="img-circle img-responsive center-block" style="border:10px solid white">
-				<h2 style="color: #555">I have a strong passion for technology and computers.</h2>	
-		</div>
-    </div>
+
+<div class="centered-container">
+  <article class="home-page">
+    <section class="home-page__profile-card">
+      <div class="profile-card">
+        <div class="profile-card__portrait" title="I am a current student at Northeastern University studying computer science and mathematics, currently living in Flossmoor, IL and Boston, MA.">
+          <img src="/assets/images/profile-small.png" alt="Nick Thompson - Profile" />
+        </div>
+        <div class="profile-card__details">
+          <h1 class="profile-card__title">Nick Thompson</h1>
+          <h2 class="profile-card__subtitle">Computer Science and Math Major</h2>
+        </div>
+      </div>
+    </section>
+    <section class="home-page__about">
+      <p>Hi, I'm Nick. I am a student at <a href="https://www.northeastern.edu/">Northeastern University</a> studying computer science and mathematics. I love technology and hacking on random projects.</p>
+      <p>You can learn a bit more <a href="/about/">about me</a> and take a look at some of my <a href="/projects/">projects</a> and <a href="/blog/">blog posts</a> as well.</p>
+    </section>
+      {% include footer-content.html %}
+  </article>
 </div>
