@@ -814,6 +814,12 @@ img.tile-list__item__image {
   margin: 0 2rem 0 0;
   height: 8rem; }
 
+.tile-list__item__image {
+    border-radius: 2px;
+    display: block;
+    margin: 0 2rem -4rem 0;
+    height: 8rem; }
+
 .tile-list__item__text {
   padding-right: 1rem; }
 
