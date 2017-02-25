@@ -1,0 +1,60 @@
+<!-- Menu -->
+<aside class="menu" js-component="menu">
+  <nav class="menu__nav nav">
+    <ul class="nav__list nav__list--primary">
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link {% if page.title == "Home" %}nav__list__link--active{% endif %}" href="/" title="">
+          Home
+        </a>
+      </li>
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link {% if page.title == "About" %}nav__list__link--active{% endif %}" href="/about/" title="">
+          About
+        </a>
+      </li>
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link {% if page.title == "Projects" %}nav__list__link--active{% endif %}" href="/projects/" title="">
+          Projects
+        </a>
+      </li>
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link  {% if page.title == "Contact" %}nav__list__link--active{% endif %}" href="/contact/" title="">
+          Contact
+        </a>
+      </li>
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link {% if page.title == "Blog" %}nav__list__link--active{% endif %}" href="/blog/" title="">
+          Blog
+        </a>
+      </li>
+    </ul>
+    <ul class="nav__list nav__list--secondary">
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link" href="mailto:me@nickthompson.guru">
+          email
+        </a>
+      </li>
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link" href="https://twitter.com/inickt_dev/" rel="nofollow" target="_blank">
+          twitter
+        </a>
+      </li>
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link" href="https://github.com/inickt/" rel="nofollow" target="_blank">
+          github
+        </a>
+      </li>
+      <hr class="nav__list__divider" />
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link {% if page.title == "PGP Key" %}nav__list__link--active{% endif %}" href="/pgp-key/">
+          pgp
+        </a>
+      </li>
+      <li class="nav__list__item" js-menu-item>
+        <a class="nav__list__link {% if page.title == "PayPal and Bitcoin" %}nav__list__link--active{% endif %}" href="/paypal-bitcoin/" rel="nofollow" target="blank">
+          paypal/bitcoin
+        </a>
+      </li>
+    </ul>
+  </nav>
+</aside>

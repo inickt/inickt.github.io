@@ -4,13 +4,24 @@
 <html>
 	{% include head.html %}
 	<!-- Body -->
-	<body>
-		{% include navbar.html %}
-    	<div class="page-content">
-      		<div class="wrapper">
-        		{{ content }}
-      		</div>
-		</div>
-	</body>
-  	{% include foot.html %}
+		<body js-component="page">
+			{% include menu.html %}
+
+			<div class="page">
+				{% include header.html %}
+
+				<div class="content-container container">
+				  <div class="column">
+						{{content}}
+					</div>
+				</div>
+		
+				{% include footer.html %}
+
+				<div class="elevator" js-component="elevator" js-args="{ offset: 500 }">
+					<i class="elevator__icon fa fa-angle-up" aria-hidden="true"></i>
+				</div>
+			</div>
+		</body>
+		{% include foot.html %}
 </html>
