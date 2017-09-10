@@ -2,3 +2,4 @@
 _site/
 _plugins/
 .DS_Store
+Gemfile.lock
