@@ -14,5 +14,87 @@ description: ""
   </p>
 </header>
 
+<p>
+I wanted to get something out for people to play around with for NHL playoffs. This is an initial beta, and there are some known issues, but it should be able to play everything okay with minimal crashing. I will hopefully be pushing an updated beta with fixed known issues by the end of the weekend. I had a couple things I was trying to get done before pushing this beta out, but they aren't critical to functionality.
 
-<p>A current work in progress.</p>
+<h2>App information</h2>
+
+<a href="https://imgur.com/a/W0B3k">Screenshots</a>
+
+<h3>Known issues:</h3>
+<ul>- Switching between dates when loading can have the wrong games show up sometimes.</li>
+<li> MLB showing scheduled instead of game time.</li>
+<li> iPad UI and horizontal phone UI get pretty hard to use</li>
+<li> No error message for not being able to play expired streams</li>
+<li> After playing a stream for the first time, you have to hit the play button again to play a different stream</li>
+<li> Play button is too small</li>
+</ul>
+
+<h3>Features:</h3>
+<ul>
+<li> NHL/MLB game playback </li>
+<ul><li> quality selection (including auto for cellular)</li>
+<li> subtitles</li>
+<li> audio selection (radio, language, ballpark)</li>
+<li> scrubbing (for live and archived games)</li></ul>
+<li> Feed/CDN selection</li>
+<li> AirPlay</li>
+<li> iPad picture in picture support</li>
+</ul>
+
+<h3>Stuff left to do:</h3>
+<ul>
+<li> Open source (did some cleanup but code is still a mess)</li>
+<li> Onboarding screens to help install Surge 3</li>
+<li> Check to make sure DNS/servers are correct</li>
+<li> Better UI for iPad/landscape phones</li>
+<li> Better error handling</li>
+<li> Implement stream expired check</li>
+<li> Auto generating Surge 3 file (with optional optimized DNS servers and adblocking)</li>
+</ul>
+
+<h3>Planned features:</h3>
+<ul>
+<li> Swiping between game pages</li>
+<li> Readme/documentation</li>
+<li> Update available prompt</li>
+<li> Downloading games</li>
+<li> Settings/about page for default quality/favorite teams</li>
+<li> Rework/rewrite some of the frameworks I used</li>
+<li>Jailbreak .deb (with host changes, so Surge 3 isn't needed)</li>
+<li> Option to show game scores</li>
+</ul>
+
+<h2>Installation</h2>
+
+<h3>Requirements:</h3>
+
+<ul>
+<li> iOS 10 and above: <a href="https://itunes.apple.com/us/app/surge-3-web-developer-tool/id1329879957?mt=8">Surge 3</a> (It's free, you do NOT need the in app purchase)</li>
+<li> iOS 9 (Not tested): Jailbroken with necessary <a href="https://www.reddit.com/r/LazyMan/wiki/hostsfile">host file changes</a></li>
+
+<li> A computer with <a href="http://www.cydiaimpactor.com/">Cydia Impactor</a></li>
+<li> An Apple ID (not sure how you have an iOS device without one of these)</li>
+
+</ul>
+
+<h3>Instructions:</h3>
+<ol>
+<li>Download and install Cydia Impactor. This is a trusted application that is commonly used to load jailbreaks or sideloaded apps. You can read more about it <a href="https://www.theiphonewiki.com/wiki/Cydia_Impactor">here</a>.</li>
+<li> Download the LazyMan for iOS .ipa <a href="https://mega.nz/#!DXxXxYLK!jwmXw4jY7eqEeu214DjhlOwfwqOa6Y7cVYhlWp9YFWw">here</a>.</li>
+<li>Open Cydia Impactor, plug in your device, and drag the .ipa onto the window. Install.</li>
+<li>Trust the app on your phone in Settings -> General -> Profiles &amp; Device Management.</li>
+<li>Copy  <a href="https://gist.githubusercontent.com/inickt/52ab5d68e57eed4c309a61c2668f8b76/raw/34eaf743be486112b41b76fbd7f8dbb4123150be/LazyMan.conf">this link</a>, and open Surge 3. Click the logo/profile name in the upper left hand corner, and then click Download Profile from URL. Paste the URL and click okay.</li>
+<li>Start Surge 3.</li>
+<li>Profit.</li>
+</ol>
+
+<h3>Notes:</h3>
+<li>If you do not have a paid developer Apple account, you will have to repeat step 3 every 7 days.</li>
+<li>Surge 3 must be running for LazyMan for iOS to work.</li>
+<li>I can help troubleshoot a little bit, but this is a beta. I would rather spend my time getting a polished version out and ready. Eventually I will have LazyMan for iOS automatically create and import the Surge 3 config.</li>
+<li>Please post bugs and crashes you run into!</li>
+
+
+If you have any questions please comment below. This has been really fun to make, and I look forward to continue to work on it. I promise I will open source soon (maybe this weekend). Once again, thanks to /u/StevensNJD4 for the work he has done to make this possible. Enjoy, and happy playoffs!
+</p>
