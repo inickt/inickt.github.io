@@ -1,0 +1,185 @@
+---
+---
+<html>
+
+<head>
+    <link rel="stylesheet" href="../new.css">
+    <script src="https://kit.fontawesome.com/bbd73c7958.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+
+<body>
+    <div class="sidebar">
+        <img src="https://image-aws-us-west-2.vsco.co/f3ed17/21422564/5cbbad1a5b82f12e141e66dd/vsco5cbbad1a444e7.jpg"
+            alt="Nick Thompson - Profile" />
+        <h1>Nick Thompson</h1>
+        <h2>Computer Science and Math Major</h2>
+        <i class="fas fa-envelope"></i>
+
+        <a href="https://github.com/inickt/" title="Look through my Github profile">
+            <i class="fab fa-github"></i>
+            inickt
+        </a>
+        <a href="https://twitter.com/inickt_/" title="Tweet me!">
+            <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+        <p>This is the footer - it shows only on desktops</p>
+    </div>
+    <div class="content">
+        <div id="about" class="section">
+            <h1>about.</h1>
+            <p>
+                Hi, I'm Nick. I am a student at Northeastern University studying computer science and mathematics. I
+                love technology and hacking on random projects.
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada ac metus a condimentum. Aliquam
+                cursus semper dolor nec porttitor. In tincidunt eu risus vel ornare. Aliquam erat volutpat. Nunc in
+                massa in arcu fermentum lobortis placerat convallis ex. Quisque eget sapien ut eros porttitor lobortis
+                at non nisl. Donec lectus magna, molestie sit amet urna vel, efficitur rutrum sem. Mauris aliquet cursus
+            </p>
+            <p>
+                ullamcorper. Donec non augue id purus gravida finibus porta nec sapien. Duis ullamcorper, leo id
+                interdum feugiat, augue metus rhoncus elit, at gravida lacus lectus at ipsum. Suspendisse sodales
+                sagittis justo at lacinia. Aenean porttitor et dui sit amet rutrum. Nunc egestas nulla ac eros ultrices,
+                in condimentum velit vehicula. Proin posuere velit ac malesuada dictum. Sed quis scelerisque diam.
+            </p>
+        </div>
+
+        <div id="about" class="section">
+            <h1>projects.</h1>
+
+            {% for project in site.data.cards %}
+            <div class="card">
+                <div class="card-content">
+                    {% if project.link %}
+                    <a href="{{ project.link }}">
+                        {% endif %}
+                        <h1>{{ project.name }}</h1>
+                        {% if project.link %}
+                    </a>
+                    {% endif %}
+                    <span>
+                        <h3>{{ project.description }}</h3>
+                    </span>
+                    {% if project.language %}
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; {{ project.language }}</span>
+                    {% endif %}
+                </div>
+                {% if project.include %}
+                <div class="card-collapsible">
+                    <input id="card-collapsible-{{ forloop.index }}" class="card-collapsible-toggle" type="checkbox">
+                    <label for="card-collapsible-{{ forloop.index }}"
+                        class="card-collapsible-label fas fa-angle-left"></label>
+                    <div class="card-collapsible-content">
+                        {% include {{ project.include }} %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+        <div id="work-experience" class="section">
+            <h1>work experience.</h1>
+
+            {% for project in site.data.cards %}
+            <div class="card">
+                <div class="card-content">
+                    {% if project.link %}
+                    <a href="{{ project.link }}">
+                        {% endif %}
+                        <h1>{{ project.name }}</h1>
+                        {% if project.link %}
+                    </a>
+                    {% endif %}
+                    <span>
+                        <h3>{{ project.description }}</h3>
+                    </span>
+                    {% if project.language %}
+                    <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; {{ project.language }}</span>
+                    {% endif %}
+                </div>
+                {% if project.include %}
+                <div class="card-collapsible">
+                    <input id="card-collapsible-{{ forloop.index }}" class="card-collapsible-toggle" type="checkbox">
+                    <label for="card-collapsible-{{ forloop.index }}"
+                        class="card-collapsible-label fas fa-angle-left"></label>
+                    <div class="card-collapsible-content">
+                        {% include {{ project.include }} %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+
+        <div id="other" class="section">
+            <h1>other.</h1>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada ac metus a condimentum. Aliquam
+                cursus semper dolor nec porttitor. In tincidunt eu risus vel ornare. Aliquam erat volutpat. Nunc in
+                massa in arcu fermentum lobortis placerat convallis ex. Quisque eget sapien ut eros porttitor lobortis
+                at non nisl. Donec lectus magna, molestie sit amet urna vel, efficitur rutrum sem. Mauris aliquet cursus
+                ullamcorper. Donec non augue id purus gravida finibus porta nec sapien. Duis ullamcorper, leo id
+                interdum feugiat, augue metus rhoncus elit, at gravida lacus lectus at ipsum. Suspendisse sodales
+                sagittis justo at lacinia. Aenean porttitor et dui sit amet rutrum. Nunc egestas nulla ac eros ultrices,
+                in condimentum velit vehicula. Proin posuere velit ac malesuada dictum. Sed quis scelerisque diam.
+            </p>
+        </div>
+    </div>
+    <div class="color-toggle">
+        <input id="color-radio-auto" name="color-toggle" type="radio" onclick="autoColor()" class="color-toggle-auto">
+        <label for="color-radio-auto"><i class="fas fa-magic"></i></label>
+        |
+        <input id="color-radio-light" name="color-toggle" type="radio" onclick="lightColor()"
+            class="color-toggle-light">
+        <label for="color-radio-light"><i class="fas fa-sun"></i></label>
+        |
+        <input id="color-radio-dark" name="color-toggle" type="radio" onclick="darkColor()" class="color-toggle-dark">
+        <label for="color-radio-dark"><i class="fas fa-moon"></i></label>
+    </div>
+</body>
+
+<script>
+    window.FontAwesomeConfig = {
+        searchPseudoElements: true
+    }
+</script>
+<script>
+
+    function toggleColor() {
+        current = localStorage.getItem("color-mode") || getComputedStyle(document.documentElement).getPropertyValue('--color-mode').replace(/\'|"/g, '').trim();
+        other = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-user-color-scheme', other);
+        localStorage.setItem("color-mode", other)
+    }
+
+    function lightColor() {
+        document.documentElement.setAttribute('data-user-color-scheme', "light");
+        localStorage.setItem("color-mode", "light")
+    }
+
+    function darkColor() {
+        document.documentElement.setAttribute('data-user-color-scheme', "dark");
+        localStorage.setItem("color-mode", "dark")
+    }
+
+    function autoColor() {
+        document.documentElement.removeAttribute('data-user-color-scheme')
+        localStorage.removeItem("color-mode")
+    }
+
+    (function () {
+        current = localStorage.getItem("color-mode")
+        if (current) {
+            document.documentElement.setAttribute('data-user-color-scheme', current);
+            document.getElementById('color-radio-' + current).checked = true;
+        } else {
+            document.getElementById('color-radio-auto').checked = true;
+        }
+    })()
+</script>
+
+</html>

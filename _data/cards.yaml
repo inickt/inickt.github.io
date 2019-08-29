@@ -1,0 +1,16 @@
+---
+- name: LazyMan
+  link: https://github.com/inickt/LazyMan-iOS/
+  description: A simple app that lets you stream every live and archived NHL and MLB game from any of your iOS devices for free.
+  include: project.html
+  language: Swift
+- name: Website
+  repo: inickt/inickt.github.com
+  description: Some website text
+- name: Website
+  repo: inickt/inickt.github.com
+  description: Some website text
+- name: Website
+  repo: inickt/inickt.github.com
+  description: Some website text
+

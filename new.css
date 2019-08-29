@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins|Questrial&display=swap');
+
+:root {
+
+    /** Constants **/
+    --sidebar-width: 32vw;
+
+    --card-content-padding-x: 4vh;
+    --card-content-padding-y: 5%;
+
+    --border-radius: 7px;
+    /** End constants **/
+
+    /* Dark color scheme */
+    --color-dark: rgb(10, 10, 10);
+    --color-dark-alpha: rgba(10, 10, 10, 0.4);
+    --color-dark-lighter: rgb(20, 20, 20);
+    --color-dark-lightest: rgb(25, 25, 25);
+    --color-dark-highlight: #911010;
+    --background-dark-image-url: url("bg2.jpg");
+
+    /* Light color scheme */
+    --color-light: #efefef;
+    --color-light-alpha: rgba(255, 255, 255, 0.3);
+    --color-light-darker: #dfdfdf;
+    --color-light-darkest: rgb(207, 207, 207);
+    --color-light-highlight: #c40909;
+    --background-light-image-url: url("bg1.jpg");
+
+    /* Default */
+    --color-mode: 'light';
+    --background: var(--color-light);
+    --background-alpha: var(--color-light-alpha);
+    --text-color: var(--color-dark);
+    --button-color: var(--color-light);
+    --highlight-color: var(--color-light-highlight);
+
+    --background-image-url: var(--background-light-image-url);
+
+    --card-color: var(--color-light-darker);
+    --card-collapsible-color: var(--color-light-darkest);
+    /*
+    --shadow-color:
+
+    */
+    /* --card-color: var(--) */
+    /* --highlight-color: #c40909; light? */
+
+    --background-image: linear-gradient(90deg,
+            var(--background-alpha),
+            var(--background)),
+        var(--background-image-url);
+
+    font-size: 62.5%
+}
+
+[data-user-color-scheme='dark'] {
+    --background: var(--color-dark);
+    --background-alpha: var(--color-dark-alpha);
+    --text-color: var(--color-light);
+    --button-color: var(--color-dark);
+    --highlight-color: var(--color-dark-highlight);
+
+    --card-color: var(--color-dark-lighter);
+    --card-collapsible-color: var(--color-dark-lightest);
+    --background-image-url: var(--background-dark-image-url);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-mode: 'dark';
+    }
+
+    :root:not([data-user-color-scheme]) {
+        --background: var(--color-dark);
+        --background-alpha: var(--color-dark-alpha);
+        --text-color: var(--color-light);
+        --button-color: var(--color-dark);
+        --highlight-color: var(--color-dark-highlight);
+
+        --card-color: var(--color-dark-lighter);
+        --card-collapsible-color: var(--color-dark-lightest);
+        --background-image-url: var(--background-dark-image-url);
+    }
+}
+
+body {
+    background: var(--background);
+    color: var(--text-color);
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+}
+
+a {
+    color: var(--text-color);
+    transition: all 0.25s ease-out;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    margin: 1vh 0;
+}
+
+a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    /* background: linear-gradient(90deg, rgba(20,20,20,1) 0%, rgba(10,10,10,1) 100%); */
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+
+    padding: 4vh 3vw;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--background-image) center center;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+}
+
+.color-toggle {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: var(--sidebar-width);
+    padding: 4vh 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.color-toggle>input[type="radio"] {
+    display: none;
+}
+
+.color-toggle>input[type="radio"]:checked+label {
+    color: var(--highlight-color);
+}
+
+.color-toggle>label {
+    padding: 0 10px;
+    transition: all 0.25s ease-out;
+}
+
+.color-toggle>label:hover {
+    color: var(--highlight-color);
+    cursor: pointer;
+}
+
+.sidebar img {
+    display: block;
+    width: 250px;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+.content {
+    margin-left: var(--sidebar-width);
+    padding: 4vh 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: var(--text-color);
+    font-weight: bold;
+    font-family: "Questrial", sans-serif;
+}
+
+.content h1 {
+    font-size: 4.0rem;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+}
+
+.section>h1 {
+    text-decoration: underline;
+    text-decoration-color: var(--highlight-color);
+}
+
+.section>p {
+    margin: 1vh 2vw;
+}
+
+.card {
+
+    background: var(--card-collapsible-color);
+    /* background: #191919; */
+    border-radius: var(--border-radius);
+
+    overflow: hidden;
+
+    margin: 2vh 2vw;
+    color: var(--text-color);
+    /* border: 1px solid rgb(0, 0, 0, 0.08); */
+    /* box-shadow: 0px 0px 0px rgb(0, 0, 0, 0); */
+    transition: 0.4s ease-in-out;
+    transform: scale(1);
+}
+
+.card:hover {
+    box-shadow: 0px 5px 5px rgb(5, 5, 5, 0.5);
+    transform: scale(1.03);
+}
+
+.card-content {
+    background: var(--card-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 5px 5px rgb(5, 5, 5, 0.5);
+    padding: var(--card-content-padding-x) var(--card-content-padding-y);
+    overflow: hidden;
+}
+
+.card h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    /* margin: 1vh 0px; */
+    /* padding: 0px 1px; */
+    word-wrap: break-word;
+    display: inline;
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
+.card h3 {
+    margin: 1.2rem 0;
+    padding: 0 0;
+}
+
+@media screen and (max-width: 800px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        text-align: center;
+    }
+
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    .card:hover {
+        transform: scale(1);
+    }
+
+    .color-toggle {
+        position: static;
+        width: 100%;
+    }
+}
+
+
+.card-collapsible-toggle {
+    display: none;
+}
+
+.card-collapsible-label {
+    /* display: block !important;  */
+
+    /* padding: 1rem; */
+
+    /* color: #A77B0E; */
+    /* background: #FAE042; */
+    position: absolute;
+    top: 3.5vh;
+    right: 5%;
+    height: 0px;
+    cursor: pointer;
+
+    /* padding: 5% 5%; */
+    /* text-align: right; */
+    float: right;
+
+    transition: all 0.25s ease-out;
+
+    /* background-color: #141414; */
+    /* border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px; */
+    font-size: 2.4rem;
+
+}
+
+.card-collapsible-label:hover {
+    color: var(--highlight-color);
+}
+
+.card-collapsible-label::before {
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform .25s ease-out;
+}
+
+.card-collapsible-toggle:checked+.card-collapsible-label::before {
+    transform: rotate(-90deg) translateX(-3px);
+}
+
+.card-collapsible-content {
+    max-height: 0px;
+    overflow: hidden;
+    transition: .25s ease-in-out;
+    padding: 0 var(--card-content-padding-y);
+}
+
+.card-collapsible-toggle:checked+.card-collapsible-label+.card-collapsible-content {
+    max-height: 500px;
+    padding: var(--card-content-padding-x) var(--card-content-padding-y);
+}
